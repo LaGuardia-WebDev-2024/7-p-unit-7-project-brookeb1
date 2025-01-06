@@ -8,9 +8,20 @@ var fireworkX = 20;
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
- 
   background(255,255,255,0);
-  
+  //face
+  fill(255,255,255);
+   ellipse(184,180,100,90);
+   //eye1
+   fill(0,0,0);
+   ellipse(170,166,20,20);
+   //pupil1
+   ellipse
+   //eye2
+   ellipse(198,166,20,20);
+   //mouth
+   fill(168,50,96);
+   rect(170,190,30,20);
    if(mousePressed){
     showXYPositions();
     
