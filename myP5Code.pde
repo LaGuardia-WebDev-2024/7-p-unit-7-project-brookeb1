@@ -4,8 +4,13 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var fireworkX = 20;
-
+var eyesize=20;
+var pupilsize=10;
+var earsize=30;
+var insideearsize=20;
+var mouthsize=20;
+var ballradius=40;
+var ballradius2=50;
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
   background(255,255,255,0);
@@ -14,23 +19,45 @@ draw = function(){
    ellipse(184,180,100,90);
    //eye1
    fill(0,0,0);
-   ellipse(170,166,20,20);
-   //pupil1
-   ellipse
+   ellipse(170,166,eyesize,eyesize);
    //eye2
-   ellipse(198,166,20,20);
+   ellipse(198,166,eyesize,eyesize);
+    //pupil1
+   fill(255,255,255);
+   ellipse(198,166,pupilsize,pupilsize);
+   //pupil2
+   fill(255,255,255);
+   ellipse(171,166,pupilsize,pupilsize);
    //mouth
    fill(168,50,96);
-   rect(170,190,30,20);
+   rect(170,190,30,mouthsize);
+   //ear1
+   fill(255,255,255);
+  ellipse(150,135,earsize,earsize);
+  //ear2
+  fill(255,255,255);
+  ellipse(216,135,earsize,earsize);
+  //insideear1
+  fill(168,50,96);
+  ellipse(150,135,insideearsize,insideearsize);
+  //insideear2
+  fill(168,50,96);
+  ellipse(216,135,insideearsize,insideearsize);
+  //movingitem
+  fill(3,123,252);
+  ellipse(100,90,ballradius,ballradius);
+  //movingitem2
+  fill(199,10,93);
+  ellipse(250,90,ballradius2,ballradius2);
    if(mousePressed){
     showXYPositions();
     
   }
   
   //🎯Animation Code Goes Here
-  rect(fireworkX, 15, 10, 10);
-  
-  fireworkX = fireworkX + 1;
+ mouthsize= mouthsize+1;
+  ballradius= ballradius+=1
+ballradius2= ballradius+=1
 
 }
 
