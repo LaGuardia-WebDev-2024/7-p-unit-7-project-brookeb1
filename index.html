@@ -13,7 +13,6 @@ Select ONE Additional
 [ no ] Feature 5 - Animate a color change
 -->
 
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -23,27 +22,39 @@ Select ONE Additional
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
     <style>
-     
+      #newyear {
+        color: rgb(168, 50, 168);
+        font: italic 20px veranda;
+      }
+      #numbers {
+        color: rgb(168, 50, 168);
+        font: italic 20px veranda;
+      }
+      .goals {
+        font: italic 20px veranda;
+        color: rgb(168, 50, 168);
+      }
+      body {
+        background-color: rgb(255, 255, 255);
+      }
     </style>
   </head>
 
   <body>
-    <h1>
-      New Year, New Me
-    </h1>
+    <h1 id="newyear">New Year, New Me</h1>
     <div class="main">
       <canvas id="myCanvas" data-processing-sources="myP5Code.pde"> </canvas>
-      
+
       <div>
-        <h2>
-          2025 Goals
-        </h2>
-        <ol>
-          <li>Spend More Time Coding </li>
+        <h2 class="goals">2025 Goals</h2>
+        <ol id="numbers">
+          <li>read more</li>
+          <li>study for AP tests</li>
+          <li>get more sleep</li>
+          <li>get a good SAT grade</li>
         </ol>
       </div>
     </div>
-        
   </body>
 </html>
 
