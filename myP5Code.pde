@@ -11,6 +11,8 @@ var insideearsize=20;
 var mouthsize=20;
 var ballradius=40;
 var ballradius2=50;
+var leftx= 200;
+var rightx= 250;
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
   background(255,255,255,0);
@@ -49,6 +51,20 @@ draw = function(){
   //movingitem2
   fill(199,10,93);
   ellipse(250,90,ballradius2,ballradius2);
+  //leftx
+  fill(255,255,255);
+  ellipse(leftx,150,126,97);
+  ellipse(leftx+62,150,70,60);
+  ellipse(leftx-62,150,70,60);
+  //rightx
+  fill(255,255,255);
+  ellipse(rightx,100,126,97);
+  ellipse(rightx+62,100,70,60);
+  ellipse(rightx-62,150,70,60);
+  
+  leftx +=4;
+  rightx -=2
+  
    if(mousePressed){
     showXYPositions();
     
